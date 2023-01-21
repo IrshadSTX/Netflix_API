@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_cpy/Core/constants.dart';
-import 'package:netflix_cpy/Presentation/search/widgets/search_idle.dart';
+
+import 'package:netflix_cpy/Presentation/search/widgets/search_result.dart';
+
+const imageUrl =
+    "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg";
 
 class ScreenSearch extends StatelessWidget {
   const ScreenSearch({super.key});
@@ -30,7 +34,8 @@ class ScreenSearch extends StatelessWidget {
                 ),
               ),
               kHeight,
-              Expanded(child: const SearchIdleWidget()),
+              // const Expanded(child: const SearchIdleWidget()),
+              const Expanded(child: SearchResultWidget()),
             ],
           ),
         ),
