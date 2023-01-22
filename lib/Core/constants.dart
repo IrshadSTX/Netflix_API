@@ -12,3 +12,9 @@ const kHeight20 = SizedBox(
 //Border Radius
 final BorderRadius kRadius20 = BorderRadius.circular(20);
 final BorderRadius kRadius10 = BorderRadius.circular(10);
+
+//images
+const KmainImage =
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg';
+//textstyles
+TextStyle kTexts = TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
