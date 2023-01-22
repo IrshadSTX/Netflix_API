@@ -14,7 +14,7 @@ class AppBarWidget extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Downloads',
+          title,
           style:
               GoogleFonts.montserrat(fontSize: 20, fontWeight: FontWeight.bold),
         ),
