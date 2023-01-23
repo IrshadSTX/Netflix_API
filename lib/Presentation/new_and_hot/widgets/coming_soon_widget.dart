@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_cpy/Core/colors.dart';
 import 'package:netflix_cpy/Core/constants.dart';
+import 'package:netflix_cpy/Presentation/widgets/video_widget.dart';
 
 import '../../home/widgets/custom_icon_widget.dart';
 
@@ -42,34 +43,7 @@ class ComingSoonWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: double.infinity,
-                    height: 200,
-                    child: Image.network(
-                      kTempImgHotNew,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 10,
-                    right: 10,
-                    child: CircleAvatar(
-                      backgroundColor: Colors.black.withOpacity(0.5),
-                      radius: 25,
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.volume_off,
-                          color: kWhiteColor,
-                          size: 20,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              const VideoWidget(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -104,7 +78,7 @@ class ComingSoonWidget extends StatelessWidget {
               const Text('Coming on Friday'),
               kHeight,
               kHeight,
-              Text(
+              const Text(
                 'Tall Girl 2',
                 style: TextStyle(
                   fontSize: 18,
@@ -112,7 +86,7 @@ class ComingSoonWidget extends StatelessWidget {
                 ),
               ),
               kHeight,
-              Text(
+              const Text(
                 'Landing the lead in the school musical is a\ndream come true for Jodi, until the pressure\nsends her confidence -- and her relationship --\n into a tailspin.',
                 style: TextStyle(color: kGreyColor, fontSize: 12),
               )
